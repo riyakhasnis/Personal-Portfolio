@@ -376,3 +376,41 @@ button,input,textarea{font:inherit}
 .contact-email:hover {
   opacity: 0.5;
 }
+/* PROJECT PAGE TYPE SCALE */
+
+/* Make giant project titles smaller */
+.case-title {
+  font-size: clamp(72px, 9vw, 140px) !important;
+  line-height: 0.82 !important;
+  letter-spacing: -0.055em !important;
+}
+
+/* Make tiny category text like (02 / COMPUTER VISION) larger */
+.case-top .kicker,
+.case-next .kicker {
+  font-size: 13px !important;
+  letter-spacing: 0.08em;
+}
+
+/* Make ROLE / FOCUS / CONTEXT labels larger */
+.case-subline span {
+  font-size: 12px !important;
+  letter-spacing: 0.08em;
+}
+
+/* Make the actual Role / Focus / Context text larger too */
+.case-subline > div {
+  font-size: 20px !important;
+  line-height: 1.35;
+}
+
+/* Make section labels like (PROBLEM), (DATASET), etc. larger */
+.case-copy .label {
+  font-size: 12px !important;
+  letter-spacing: 0.08em;
+}
+
+/* Make presentation link slightly larger */
+.presentation-link {
+  font-size: 14px !important;
+}
