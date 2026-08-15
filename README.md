@@ -1,6 +1,6 @@
 # Riya Khasnis Portfolio
 
-A responsive editorial portfolio built from the Kyne Framer template structure and tailored to Riya's SWE / Data / AI work.
+A responsive editorial portfolio built from the Kyne Framer template structure and tailored to my work.
 
 ## Open locally
 Open `index.html` in a browser.
