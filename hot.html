@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Humanitarian OpenStreetMap Team — Riya Khasnis</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="cursor-dot"></div>
+
+  <header class="site-header">
+
+    <a class="logo" href="index.html">Riya</a>
+
+    <nav class="header-nav">
+      <a href="index.html#work">(MY WORK)</a>
+      <a href="index.html#about">(ABOUT)</a>
+      <a href="assets/Riya_Khasnis_Resume.pdf" target="_blank">(RESUME)</a>
+      <a href="index.html#contact">(LET'S TALK)</a>
+    </nav>
+
+  </header>
+
+
+  <main class="case-page">
+
+    <!-- HERO -->
+    <section class="case-top">
+
+      <div class="kicker">
+        (02 / COMPUTER VISION)
+      </div>
+
+      <h1 class="case-title reveal">
+        Humanitarian OpenStreetMap Team
+      </h1>
+
+      <p class="project-org-description">
+        Humanitarian OpenStreetMap Team is a global humanitarian mapping organization 
+        that uses open geospatial data for disaster response. This project was a collaboration with Code for Good, a 
+        UC Berkeley tech club building software, data, and AI projects for 
+        social impact.
+      </p>
+
+      <div class="case-subline">
+
+        <div>
+          <span>Role</span>
+          Machine Learning Engineer · CV Team
+        </div>
+
+        <div>
+          <span>Focus</span>
+          YOLOv8 · Dataset Engineering · Evaluation
+        </div>
+
+        <div>
+          <span>Context</span>
+          Humanitarian infrastructure mapping
+        </div>
+
+      </div>
+
+    </section>
+
+    <a class="presentation-link"
+   href="https://docs.google.com/presentation/d/1HcSKvRHM8kFPp_CFKlvI-2sE2fYvNxA-/edit?usp=sharing&ouid=102749372460662281325&rtpof=true&sd=true"
+   target="_blank">
+  VIEW PRESENTATION ↗
+</a>
+
+
+    <!-- COVER IMAGE -->
+    <div class="hot-logo-row">
+        <img src="assets/cover-hot.png" alt="Humanitarian OpenStreetMap Team">
+        <img src="assets/cfg-logo.png" alt="Code for Good">
+      </div>
+
+
+    <!-- PROBLEM -->
+    <section class="case-copy">
+
+      <div class="label">
+        (PROBLEM)
+      </div>
+
+      <div>
+
+        <h2>
+          Turning street imagery into usable infrastructure data.
+        </h2>
+
+        <p>
+          The project aimed to build a reusable pipeline that converts
+          street-level imagery into standardized OpenStreetMap tags for
+          humanitarian mapping. The computer-vision team focused on
+          detecting electrical poles and towers.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- DATASET -->
+    <section class="case-copy">
+
+      <div class="label">
+        (DATASET)
+      </div>
+
+      <div>
+
+        <h2>
+          Building the ground truth before training the model.
+        </h2>
+
+        <p>
+          The team manually labeled a 5,000-image Panoramax dataset with
+          pole, tower, and negative examples, drew bounding boxes in
+          Roboflow, and added imagery from Mapillary.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- DATASET IMAGES -->
+    <div class="case-gallery">
+
+      <img
+        src="assets/hot-6.png"
+        alt="HOT dataset development"
+      >
+
+      <img
+        src="assets/hot-9.png"
+        alt="YOLO training metrics"
+      >
+
+    </div>
+
+
+    <!-- STATS -->
+    <div class="case-stats">
+
+      <div class="case-stat">
+        <b>5K</b>
+        <span>
+          manually labeled images in the core dataset
+        </span>
+      </div>
+
+      <div class="case-stat">
+        <b>0.678</b>
+        <span>
+          overall YOLOv8s mAP50 baseline
+        </span>
+      </div>
+
+      <div class="case-stat">
+        <b>0.87</b>
+        <span>
+          tower mAP50 on test set
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- MY ANALYSIS -->
+    <section class="case-copy">
+
+      <div class="label">
+        (MY ANALYSIS)
+      </div>
+
+      <div>
+
+        <h2>
+          Understanding where the detector failed.
+        </h2>
+
+        <p>
+          I worked on evaluation of the normalized confusion matrix.
+          Towers were detected much more reliably than poles; poles were
+          frequently missed or confused with background because they are
+          thin, small, and often visually ambiguous.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONFUSION MATRIX -->
+    <div class="case-gallery single">
+
+      <img
+        src="assets/hot-10.png"
+        alt="Normalized confusion matrix and model results"
+      >
+
+    </div>
+
+
+    <!-- NEXT STEPS -->
+    <section class="case-copy">
+
+      <div class="label">
+        (NEXT STEPS)
+      </div>
+
+      <div>
+
+        <h2>
+          Improve robustness where the model struggled.
+        </h2>
+
+        <ul>
+          <li>
+            Expand negative samples to reduce false positives.
+          </li>
+
+          <li>
+            Train a larger YOLOv8 model with higher-resolution imagery.
+          </li>
+
+          <li>
+            Target difficult cases such as occlusions, shadows, trees,
+            and crowded streets.
+          </li>
+
+          <li>
+            Compare performance across environments rather than relying
+            on one aggregate metric.
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEXT PROJECT -->
+    <section class="case-next">
+
+      <div>
+
+        <div class="kicker">
+          NEXT PROJECT
+        </div>
+
+        <a class="case-next-main" href="sjma.html">
+            San José Museum of Art →
+          </a>
+
+      </div>
+
+      <a
+        class="kicker"
+        href="index.html#work"
+      >
+        BACK TO WORK
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

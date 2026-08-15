@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AeroFreight AI — Riya Khasnis</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="cursor-dot"></div>
+
+  <header class="site-header">
+
+    <a class="logo" href="index.html">Riya</a>
+
+    <nav class="header-nav">
+      <a href="index.html#work">(MY WORK)</a>
+      <a href="index.html#about">(ABOUT)</a>
+      <a href="assets/Riya_Khasnis_Resume.pdf" target="_blank">(RESUME)</a>
+      <a href="index.html#contact">(LET'S TALK)</a>
+    </nav>
+
+  </header>
+
+
+  <main class="case-page">
+
+    <!-- HERO -->
+    <section class="case-top">
+
+      <div class="kicker">
+        (03 / CALHACKS AI · 3RD PLACE FETCH.AI TRACK)
+      </div>
+
+      <h1 class="case-title reveal">
+        AeroFreight AI
+      </h1>
+
+      <div class="case-subline">
+
+        <div>
+          <span>Role</span>
+          Routing Agent
+        </div>
+
+        <div>
+          <span>Stack</span>
+          Python · Fetch.ai uAgents · Agentverse
+        </div>
+
+        <div>
+          <span>System</span>
+          Six-agent freight planning workflow
+        </div>
+
+      </div>
+
+      <!-- PRESENTATION LINK -->
+      <a
+        class="presentation-link"
+        href="https://docs.google.com/presentation/d/1iBXF3eTIPZw65kxKfDEOtkJPWMiKhXw0/edit?usp=sharing&ouid=102749372460662281325&rtpof=true&sd=true"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        VIEW PRESENTATION ↗
+      </a>
+
+    </section>
+
+
+    <!-- COVER -->
+    <div class="case-visual">
+      <img
+        src="assets/cover-aero.png"
+        alt="AeroFreight AI project"
+      >
+    </div>
+
+
+    <!-- IDEA -->
+    <section class="case-copy">
+
+      <div class="label">
+        (IDEA)
+      </div>
+
+      <div>
+
+        <h2>
+          One shipping request, one coordinated workflow.
+        </h2>
+
+        <p>
+          AeroFreight AI is a multi-agent freight-planning system that
+          turns a plain-language shipment request into a validated route,
+          cost model, and invoice. The workflow coordinates specialized
+          agents for intake, economics, routing, and settlement.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORKFLOW -->
+    <div class="case-gallery single">
+
+      <img
+        src="assets/aero-4.png"
+        alt="AeroFreight multi-agent workflow"
+      >
+
+    </div>
+
+
+    <!-- MY ROLE -->
+    <section class="case-copy">
+
+      <div class="label">
+        (MY ROLE)
+      </div>
+
+      <div>
+
+        <h2>
+          Routing and cost comparison across air and ocean paths.
+        </h2>
+
+        <p>
+          I owned the routing portion of the workflow. The routing layer
+          calculates Haversine paths from origin city to port or airport,
+          through a U.S. entry point, and onward to the destination.
+          AIR and SHIP sub-agents return freight cost, inland trucking,
+          tolls, and transit time before the system selects a mode based
+          on the user's speed-versus-cost preference.
+        </p>
+
+        <div class="pipeline">
+
+          <span class="node">
+            Origin
+          </span>
+
+          <span class="pipe-arrow">
+            →
+          </span>
+
+          <span class="node">
+            Port / Airport
+          </span>
+
+          <span class="pipe-arrow">
+            →
+          </span>
+
+          <span class="node">
+            U.S. Entry
+          </span>
+
+          <span class="pipe-arrow">
+            →
+          </span>
+
+          <span class="node">
+            Destination
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY AGENTS -->
+    <section class="case-copy">
+
+      <div class="label">
+        (WHY AGENTS)
+      </div>
+
+      <div>
+
+        <h2>
+          Separate decisions, shared state.
+        </h2>
+
+        <p>
+          Rather than one monolithic process, each agent handled a focused
+          responsibility and returned structured data to the shared workflow.
+          That made routing, tax logic, and invoicing independently
+          understandable while still producing one end-to-end result.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROBLEM IMAGE -->
+    <div class="case-gallery single">
+
+      <img
+        src="assets/aero-2.png"
+        alt="AeroFreight problem and constraints"
+      >
+
+    </div>
+
+
+    <!-- NEXT PROJECT -->
+    <section class="case-next">
+
+      <div>
+
+        <div class="kicker">
+          NEXT PROJECT
+        </div>
+
+        <a class="case-next-main" href="hot.html">
+            Humanitarian OpenStreetMap Team →
+          </a>
+
+      </div>
+
+      <a
+        class="kicker"
+        href="index.html#work"
+      >
+        BACK TO WORK
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
