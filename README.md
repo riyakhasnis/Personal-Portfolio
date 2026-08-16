@@ -2,6 +2,8 @@
 
 A responsive editorial portfolio built from the Kyne Framer template structure and tailored to my work.
 
+Template used: https://www.framer.com/community/marketplace/templates/kyne/ 
+
 ## Open locally
 Open `index.html` in a browser.
 
